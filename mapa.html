@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+	<title>QMobile</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/jquery.mobile-1.2.0.min.js"></script>
+	
+</head> 
+<body> 
+
+<div data-role="page" id="paginaMapa">
+
+	<div data-role="header" data-position="fixed" data-theme="a">
+		<a href="index.html" data-icon="home" data-transition="fade">Men&uacute;</a>
+		<h1>Mapa</h1>
+		<a href="index.html" data-icon="delete" class="ui-btn-right" data-transition="fade">Salir</a>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<div id="map_canvas">
+		</div>
+	<script type="text/javascript">
+        
+         var mobileDemo = { 'center': '6.198022822278826, -75.57428910388836', 'zoom': 17 };
+            var chicago = new google.maps.LatLng(6.198022822278826, -75.57428910388836);
+            var map 
+
+            $('#map_canvas').gmap({'center': chicago, 'zoom': mobileDemo.zoom, 'disableDefaultUI':false, 'callback': function() {
+                        var self = this;
+                        self.addMarker({'position': this.get('map').getCenter() }).click(function() {
+                            self.openInfoWindow({ 'content': 'Lugar de la Deteccion !' }, this);
+                        });
+                    }}); 
+
+    </script> 
+	
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed" data-theme="a">
+		<h1><img src="images/logo-quipux.png" id="logoQuipux"></h1>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>
