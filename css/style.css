@@ -61,4 +61,15 @@
 	height:480px; 
 	width:330px; 
 	margin:0px auto;
+	border:1px solid #FFF;
+}
+
+#divLogin
+{
+	width:80%;
+	margin:5px auto;
+	border-radius:8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	padding:20px;
 }
