@@ -117,3 +117,13 @@
 {
 	background:#f3f3f3 url("../images/bgDeteccion.png") bottom right no-repeat fixed;
 }
+
+#pagCuenta
+{
+	background:#f3f3f3 url("../images/bgCuenta.png") bottom right no-repeat fixed;
+}
+
+#pagTramite
+{
+	background:#f3f3f3 url("../images/bgTramite.png") bottom right no-repeat fixed;
+}
