@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+	<title>QMobile</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/jquery.mobile-1.2.0.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="pagRegistro">
+
+	<div data-role="header" data-position="fixed" data-theme="a">
+		<a href="home.html" data-icon="back" data-iconpos="notext" data-transition="none" data-theme="b">Volver</a>
+		<h1>Registrarse</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	
+		<div data-role="fieldcontain">
+			<label for="name">Tipo de Documento:</label>
+			<select name="select-choice-0" id="select-choice-0" data-mini="true">
+				<option value="S"> - Seleccione - </option>
+				<option value="CC">C&eacute;dula de Ciudadan&iacute;a</option>
+				<option value="TI">Tarjeta de Identidad</option>
+				<option value="PT">Pasaporte</option>
+			</select>
+		</div>	
+		<div data-role="fieldcontain">
+			<label for="name">Documento:</label>
+			<input type="text" name="name" id="name" value="" data-mini="true" />
+		</div>	
+		<div data-role="fieldcontain">
+			<label for="name">Nombres:</label>
+			<input type="text" name="name" id="name" value="" data-mini="true" />
+		</div>	
+		<div data-role="fieldcontain">
+			<label for="name">Apellidos:</label>
+			<input type="text" name="name" id="name" value="" data-mini="true" />
+		</div>	
+		<div data-role="fieldcontain">
+			<label for="name">Pa&iacute;s:</label>
+			<select name="select-choice-0" id="select-choice-0" data-mini="true">
+				<option value="S"> - Seleccione - </option>
+				<option value="C">Colombia</option>
+				<option value="B">Brasil</option>
+				<option value="M">Costa de Marfil</option>
+			</select>
+		</div>
+        <div data-role="fieldcontain">
+			<label for="name">Email:</label>
+			<input type="text" name="name" id="name" value="" data-mini="true" />
+		</div>		
+		<div data-role="fieldcontain">
+			<label for="name">Contrase&ntilde;a:</label>
+			<input type="password" name="name" id="name" value="" data-mini="true" />
+		</div>	
+		<div data-role="fieldcontain">
+			<label for="name">Repetir Contrase&ntilde;a:</label>
+			<input type="password" name="name" id="name" value="" data-mini="true" />
+		</div>		
+		<br />
+				
+		<a href="index.html" data-theme="b" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="none"> Finalizar </a>
+		
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed" data-theme="a">
+		<h1><img src="images/logo-quipux.png" id="logoQuipux"></h1>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>
