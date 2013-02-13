@@ -13,7 +13,7 @@
 	<script type="text/javascript" src="js/ui/jquery.ui.map.js"></script>
 	
 	<script type="text/javascript">
-		var mobileDemo = { 'center': '6.196022651724042,-75.56612485', 'zoom': 17 };
+		var mobileDemo = { 'center': '6.191809500478713,-75.56745522567137', 'zoom': 15 };
 			
 			////////////////////////////////////////////////////////////
 			
@@ -21,7 +21,7 @@
 					$('#map_canvas').gmap({'center': mobileDemo.center, 'zoom': mobileDemo.zoom, 'disableDefaultUI':true, 'callback': function() {
 						var self = this;
 						self.addMarker({'position': this.get('map').getCenter() }).click(function() {
-							self.openInfoWindow({ 'content': 'Hello World!' }, this);
+							self.openInfoWindow({ 'content': '<strong>C&oacute;digo: </strong> C14 <br /> <strong>Placa: </strong> MAE228 <br /> Calle 9 Sur Carrera 32' }, this);
 						});
 					}});
 			});
