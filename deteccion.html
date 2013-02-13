@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+	<title>QMobile</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/jquery.mobile-1.2.0.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="pagDeteccion">
+
+	<div data-role="header" data-position="fixed" data-theme="a">
+		<a href="home.html" data-icon="home" data-iconpos="notext" data-transition="none" data-theme="b">Men&uacute;</a>
+		<h1>Mis Detecciones</h1>
+		<a href="index.html" data-icon="delete" data-iconpos="notext" data-transition="none" data-theme="b">Salir</a>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	
+		<div data-role="fieldcontain">
+			<label for="name">Documento:</label>
+			<input type="text" name="name" id="name" value="1037628611" disabled="disabled" data-mini="true" />
+		</div>	
+		<div data-role="fieldcontain">
+			<label for="name">Placa:</label>
+			<select name="select-choice-0" id="select-choice-0" data-mini="true">
+				<option value="S"> - Seleccione - </option>
+				<option value="CC">MAE228</option>
+				<option value="TI">XTR235</option>
+				<option value="PT">ADB852</option>
+			</select>
+		</div>	
+		<br />
+				
+		<a href="deteccionResultados.html" data-theme="b" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="none"> Buscar </a>
+		
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed" data-theme="a">
+		<h1><img src="images/logo-quipux.png" id="logoQuipux"></h1>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>

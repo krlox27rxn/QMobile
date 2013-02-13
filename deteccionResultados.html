@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+	<title>QMobile</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/jquery.mobile-1.2.0.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="pagDeteccion">
+
+	<div data-role="header" data-position="fixed" data-theme="a">
+		<a href="deteccion.html" data-icon="back" data-iconpos="notext" data-transition="none" data-theme="b">Detecci&oacute;n</a>
+		<h1>Resultados</h1>
+		<a href="index.html" data-icon="delete" data-iconpos="notext" data-transition="none" data-theme="b">Salir</a>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	
+					<ul data-role="listview" data-theme="d" data-divider-theme="d">
+						<li data-role="list-divider"></li>
+						<li><a href="deteccionDetalle.html">
+								<h3>C14</h3>
+								<p><strong>Transitar por sitios restringidos o en horas prohibidas por la autoridad competente</strong></p>
+								<p>Adem&aacute;s, el veh&iacute;culo ser&aacute; inmovilizado.</p>
+								<p class="ui-li-aside"><strong>10-03-2011</strong></p>
+						</a></li>
+					</ul>
+		<br />
+				
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed" data-theme="a">
+		<h1><img src="images/logo-quipux.png" id="logoQuipux"></h1>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>
