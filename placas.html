@@ -10,16 +10,29 @@
 </head> 
 <body> 
 
-<div data-role="page" id="pagConsultas">
+<div data-role="page" id="pagPlacas">
 
 	<div data-role="header" data-position="fixed" data-theme="a">
 		<a href="home.html" data-icon="home" data-transition="fade">Men&uacute;</a>
-		<h1>Consultas</h1>
+		<h1>Registrar Placas</h1>
 		<a href="index.html" data-icon="delete" class="ui-btn-right" data-transition="fade">Salir</a>
 	</div><!-- /header -->
 
 	<div data-role="content">	
-		Men&uacute;
+	
+		 <fieldset data-role="controlgroup">
+		   <legend>Seleccione las placas a registrar:</legend>
+		   <br />
+		   <label><input type="checkbox" name="checkbox-0" /> MAE228 </label>
+			<label><input type="checkbox" name="checkbox-1" /> WPO963 </label>
+			<label><input type="checkbox" name="checkbox-2" /> XTR235 </label>
+			<label><input type="checkbox" name="checkbox-3" /> ADB852 </label>
+			<label><input type="checkbox" name="checkbox-4" /> PLO147 </label>
+		</fieldset>
+		<br />
+		<a href="home.html" data-theme="b" data-role="button" data-icon="arrow-r" data-iconpos="right"> Registrar </a>
+	
+		
 	</div><!-- /content -->
 	
 	<div data-role="footer" data-position="fixed" data-theme="a">
