@@ -7,7 +7,44 @@
 	<link rel="stylesheet" href="css/style.css" />
 	<script src="js/jquery-1.8.2.min.js"></script>
 	<script src="js/jquery.mobile-1.2.0.min.js"></script>
+	
+    <script type="text/javascript" charset="utf-8" src="http://mobile-web-development-with-phonegap.eclipselabs.org.codespot.com/svn-history/r99/trunk/com.mds.apg/resources/phonegap/js/phonegap-1.0.0.js"></script>
+    <script type="text/javascript" charset="utf-8">
 
+    // Espera a que PhoneGap se inicie
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // PhoneGap esta listo
+    //
+    function onDeviceReady() {
+        // Vacio
+    }
+
+    // Muestra una alerta personalizada
+    //
+    function showAlert() {
+        navigator.notification.alert(
+        'Eres el ganador!',     // mensaje (message)
+        'Game Over',            // titulo (title)
+        'Cerrar'                // nombre del botón (buttonName)
+        );
+    }
+
+    // Reproduce tres beeps
+    //
+    function playBeep() {
+        navigator.notification.beep(3);
+    }
+
+    // Vibra dos segundos
+    //
+    function vibrate() {
+        navigator.notification.vibrate(2000);
+    }
+
+    </script>
+</html>
 </head> 
 <body> 
 
@@ -42,7 +79,9 @@
 				<a href="registro.html" data-theme="b" data-role="button" data-icon="gear" data-iconpos="right" data-transition="none">Registrarse</a>
 								
 			</form>
-		
+		<p><a href="#" onclick="showAlert(); return false;">Mostrar cuadro de dialogo</a></p>
+    <p><a href="#" onclick="playBeep(); return false;">Reproducir beep</a></p>
+    <p><a href="#" onclick="vibrate(); return false;">Vibrar</a></p>
 		</div>
 			
 		<div data-role="footer" data-position="fixed" data-theme="a">
